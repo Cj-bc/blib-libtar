@@ -1,0 +1,14 @@
+class:Library() {
+  @required public string name="libtar"
+  @required public string url="https://github.com/Cj-bc/libtar.git"
+  @required public array scripts push "libtar.sh"
+            public array tests push "tests"
+            public string version="v1.1.0"
+            public string description="treat tar"
+
+  Library.test() {
+    :
+  }
+}
+
+Type::InitializeStatic Library
